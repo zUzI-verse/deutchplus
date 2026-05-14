@@ -1,5 +1,5 @@
 import {Card, CardContent } from "@/components/ui/card"
-import type { TestimonialType } from "@/types/types"
+import type { TestimonialType } from "@/lib/types/types"
 
     const testimonials: TestimonialType[] = [
     {

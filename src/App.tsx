@@ -17,7 +17,7 @@ const App = () => {
      <Route path="/booking" element={<Booking />} />
     </Route>
     <Route path="/dashboard" element={<ProtectedRoute>
- <StudentDashboard />
+     <StudentDashboard />
    </ProtectedRoute>
  }
 />

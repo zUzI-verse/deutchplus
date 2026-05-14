@@ -1,12 +1,12 @@
-import supabase from "@/lib/supabase"
-import HeroSection from "./components/HeroSection"
-import ServicesSection from "./components/ServicesSection"
-import TestimonialsSection from "./components/TestimonialsSection"
-import CTASection from "./components/CTASection"
-import RoadmapSection from "./components/RoadmapSection"
+import supabase from "@/services/supabase/supabaseClient";
+import HeroSection from "./components/HeroSection";
+import ServicesSection from "./components/ServicesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import CTASection from "./components/CTASection";
+import RoadmapSection from "./components/RoadmapSection";
 
 const HomePage = () => {
-  console.log(supabase)
+  console.log(supabase);
 
   return (
     <>
@@ -16,6 +16,6 @@ const HomePage = () => {
       <TestimonialsSection />
       <CTASection />
     </>
-  )
-}
+  );
+};
 export default HomePage;
