@@ -3,7 +3,7 @@ import LevelSelection from "./components/LevelSelection"
 import EnrollmentForm from "./components/EnrollmentForm"
 import EnrollmentSuccess from "./components/EnrollmentSuccess"
 import EnrollmentConfirmModal from "./components/EnrollmentConfirmModal"
-import PaymentStep from "./components/PaymentStep"
+import PaymentStep from "../payment/PaymentStep"
 
 export default function EnrollmentPage() {
   const [level, setLevel] = useState<string | null>(null)

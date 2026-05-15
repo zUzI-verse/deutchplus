@@ -1,4 +1,4 @@
-import { supabase } from "./..";
+import { supabase } from "../../services/supabase/supabaseClient";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
