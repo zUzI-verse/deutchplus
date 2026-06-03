@@ -8,7 +8,7 @@ import { AuthProvider } from
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AuthProvider>
+    <AuthProvider> // centralizing auth state and logic in a provider
     <BrowserRouter>
       <App />
     </BrowserRouter>

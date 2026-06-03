@@ -1,6 +1,6 @@
 
 import HomePage from "@/features/home/HomePage"
-import LearnGerman from "@/app/routes/LearnGerman"
+import LearnGerman from "@/app/routes/Dashboard"
 import { Routes, Route } from "react-router-dom"
 import MainLayout from "@/app/layouts/MainLayout"
 import Enroll from "./app/routes/Enroll"
@@ -28,10 +28,9 @@ const App = () => {
             </RoleProtectedRoute>
           </ProtectedRoute>  }
       />
-      <Route
- path="/login"
- element={<LoginPage />}
-/>
+      <Route path="/login"  element={<LoginPage />}/>
+
+      
     </Routes>
   )
 }

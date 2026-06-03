@@ -52,7 +52,6 @@ export default function EnrollmentPage() {
 
       {step === "payment" && (
         <PaymentStep level={level!}
-      
         onPayLater={handlePayLater}
         />
       )}

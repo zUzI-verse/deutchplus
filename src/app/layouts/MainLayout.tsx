@@ -4,7 +4,14 @@ import Footer from "@/components/shared/Footer"
 const MainLayout = () => {
   return (
     <div className="min-h-screen">
-      <header><Navbar /></header>
+      <header>
+        <Navbar profile={{
+    role: "student"
+  }}
+
+  
+
+/></header>
       <main>
          <Outlet /> {/*  // This is where the child routes will be rendered */}
       </main>

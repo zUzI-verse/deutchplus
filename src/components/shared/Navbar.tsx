@@ -8,9 +8,13 @@ type NavbarProps = {
   profile?: {
     role?: "student" | "teacher" | string;
   };
-};
+}; 
+
+
 
 const Navbar = ({ profile }: NavbarProps) => {
+   console.log("Profile:", profile);
+
   return (
     <header className="border-b bg-white h-25">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -41,12 +45,14 @@ const Navbar = ({ profile }: NavbarProps) => {
             About Us
           </Link>
 
-          <Link to="/classes" className="hover:text-brand-yellow transition">
-            Classes
+          <Link to="/login" className="hover:text-brand-yellow transition">
+            Login
           </Link>
 
+
+
           {profile?.role === "student" && (
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/dashboard">Student Dashboard</Link>
           )}
 
           {profile?.role === "teacher" && (

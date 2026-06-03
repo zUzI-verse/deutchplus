@@ -23,7 +23,7 @@ const PaymentStep = ({ level,  onPayLater }: Props) => {
       </p>
 
       {/* Price Card */}
-      <div className="mt-6 border rounded-xl p-6 bg-brand-light">
+      <div className="mt-6 border rounded-xl p-6 bg-brand-light border-brand-red">
         <h3 className="font-semibold text-lg">
           Course Fee
         </h3>
@@ -38,7 +38,8 @@ const PaymentStep = ({ level,  onPayLater }: Props) => {
       </div>
 
       {/* Bank Details */}
-      <div className="mt-6 border rounded-xl p-6">
+      <div className="mt-6 border rounded-xl p-6 bg-brand-light
+border-brand-yellow">
 
         <h3 className="font-semibold">
           Bank Transfer Details
@@ -60,7 +61,11 @@ const PaymentStep = ({ level,  onPayLater }: Props) => {
             <span className="text-gray-500">Account Number</span>
             <span className="font-medium">0123456789</span>
           </div>
-
+           <button className="text-md font-medium hover:cursor-pointer transition  bg-brand-yellow text-black px-3 py-2 rounded-lg"
+                onClick={() => navigator.clipboard.writeText("0123456789")}
+                >
+                Copy
+              </button>
         </div>
 
       </div>

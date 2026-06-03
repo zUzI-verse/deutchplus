@@ -1,5 +1,4 @@
-import { supabase }
-from "@/services/supabase/supabaseClient"
+import { supabase } from "@/services/supabase/supabaseClient"
 
 export async function getStudentEnrollments(
  studentId:string
